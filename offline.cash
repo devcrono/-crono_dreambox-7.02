@@ -1,0 +1,32 @@
+CACHE MANIFEST 
+# v1.0 
+# 30/07/2020-00:38:57.44 
+
+
+
+asset\arrow.gif
+asset\BG.jpg
+asset\crono_.png
+asset\icon.png
+asset\setaBaixo.gif
+css\index.css
+css\index2.css
+exp_common.js
+exp_jailbreak.js
+exp_loader.js
+index.html
+pl_app2usb.js
+pl_dbBackup.js
+pl_dbRestore.js
+pl_dumper.js
+pl_ftp.js
+pl_historyBlocker.js
+pl_kernelDumper.js
+pl_linux.js
+pl_mira.js
+pl_updatesDisable.js
+pl_updatesEnable.js
+style.css
+cache.manifest
+offline.cash
+
