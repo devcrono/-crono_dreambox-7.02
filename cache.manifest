@@ -1,9 +1,8 @@
 CACHE MANIFEST 
-# v1.0 
+# v1.5 
 # 25/12/2020-02:10:57.44 
 
 index.html
-
 
 css/icon.css
 css/iconhome.css
@@ -53,9 +52,9 @@ P/Backup
 P/Backup/Backup.js
 P/Backup/index.html
 P/BinLoader
-P/Backup/index.html
+P/BinLoader/index.html
 P/CE-30391-6_Fix
-P/CE-30391-6_Fix/CE-30391-6_Fix.js
+P/CE-30391-6_Fix/ce-30391-6_fix.js
 P/CE-30391-6_Fix/index.html
 P/Disable-Updates
 P/Disable-Updates/Disable-Updates.js
@@ -81,23 +80,25 @@ P/History-Blocker/index.html
 P/jb702
 P/jb702/c-code.js
 P/Kernel-Clock
-P/Kernel-Clock/Kernel-Clock.js
 P/Kernel-Clock/index.html
+P/Kernel-Clock/Kernel-Clock.js
 P/Linux
-P/Linux/Linux.js
 P/Linux/index.html
+P/Linux/Linux.js
 P/Mira
-P/Mira/Mira.js
 P/Mira/index.html
+P/Mira/Mira.js
 P/mira702
 P/mira702/c-code.js
 P/mira702/mira.js
 P/Restore
 P/Restore/index.html
 P/Restore/Restore.js
+P/todex
+P/todex/index.html
+P/todex/todex.js
 P/702.js
 P/cal.js
 P/int64.js
 P/ps4.js
 P/utils.js
-
