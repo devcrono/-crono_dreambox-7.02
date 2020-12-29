@@ -1,0 +1,128 @@
+<html>
+<title>CRONO_ DREAMBOX 7.02 PS4 CLOCK KERNEL</title>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+<link rel="stylesheet" href="css/iconhome.css">
+<link rel="stylesheet" href="css/materializehome.css">
+<link rel="stylesheet" href="css/mainhome.css">
+
+<style>
+body
+{
+    background-image:url(img/fundo.jpg); 
+    background-attachment:fixed; background-size:100% 100%; 
+    background-repeat:no-repeat; color: #fff;
+}
+.button
+{
+
+    font-size:15px;
+    text-transform: uppercase;
+    font-weight:700;
+    border:2px solid #fff;
+    border-radius: 4px;
+    padding:10px;
+    cursor: pointer;
+    display:inline-block; 
+    text-decoration: none;
+    background:#f00;
+    color:#fff;
+    box-shadow:0 5px 0 #F00;
+    margin-top: -200px;
+
+}
+.button1
+{
+    font-size:15px;
+    text-transform: uppercase;
+    font-weight:700;
+    border:2px solid #fff;
+    border-radius: 4px;
+    padding:10px;
+    cursor: pointer;
+    display:inline-block; 
+    text-decoration: none;
+    background:#f00;
+    color:#fff;
+    box-shadow:0 5px 0 #F00;
+    margin-top: 95px;
+    margin-right: 80px;   
+    margin-left: -80px;
+}
+
+
+input
+{
+    width:90px;
+    height:25px;
+    background-color: transparent;
+}
+
+</style>
+<a href="https://twitter.com/cronocardoso"><img class="icon" src="img/icon.gif"/></a> 
+<script src="cal.js"></script>
+<div id="app" >
+<nav class="transparent" >
+<div class="nav-wrapper">
+<span id="date" ></span><span id="clock" ></span>
+<h1 href="javascript:void(0)" class="brand-logo">CRONO_ DREAMBOX 7.02 CLOCK KERNEL</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</div>
+</nav>
+<body onload="go()">
+<script>
+if(document.cookie.indexOf('kex=0') >= 0)
+    document.location.href = 'index.html';  
+</script>
+<script>
+function print(){}
+
+var scriptCode = '';
+
+function preloadScripts(lst)
+{
+    for(var i = 0; i < lst.length; i++)
+    {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', lst[i], false);
+        xhr.send('');
+        scriptCode += xhr.responseText + '\n';
+    }
+}
+
+function done()
+{
+    if(main_ret == 0 || main_ret == 179){
+        alert("\n \n P R O N T O ! Kernel-Clock carregado com SUCESSO.\n \n A T E N Ç Ã O ! ! ! Aguarde as mensagens pararem.\n  Depois clique em \"OK\" e novamente em \"OK\" na próxima tela (memória insuficiente).");
+        read_ptr_at(0);
+		}
+    else{
+		alert("Jailbreak FALHOU! Reinicie o PS4 sem sair dessa tela, usando o botão \"PS\" \n e tente novamente.");
+	}
+}
+
+window.midExploit = function()
+{
+    preloadScripts(['702.js', 'jb_c-code.js', 'mira.js', 'kernelClock.js', 'mira_c-code.js'], go);
+}
+
+window.postExploit = function()
+{
+    document.cookie = 'kex=0';
+    setTimeout(function()
+    {
+        eval.call(window, scriptCode);
+        done();
+    }, 100);
+};
+</script>
+<script src="utils.js"></script>
+<script src="int64.js"></script>
+<script src="ps4.js"></script>
+<button class="button" id="input1" onfocus="handle2()"></button>
+<button class="button1" id="input2"></button>
+<button class="button1" id="input3" onfocus="handle2()"></button>
+<select id="select1"><option value="value1">Value1</option></select>
+<div></div>
+<script>document.getElementById("select1").style.display = "none";</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+<head>
+<title>CRONO_ DREAMBOX 7.02 PS4 V2.0</title>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+<link rel="stylesheet" href="css/iconhome.css">
+<link rel="stylesheet" href="css/materializehome.css">
+<link rel="stylesheet" href="css/mainhome.css">
+<script>
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline AGUARDE! / Installing Offline Cache WAIT!: " + Percent + "%";}
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML=" Cache Instalado com Sucesso! / Cache Installed Successfully!";},3000);setTimeout(function(){window.msgs.innerHTML="AGORA! Saia, Desligue a Internet e Abra o Navegador Novamente para executar os EXPLOITS! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  NOW! Exit, Turn off the Internet and Open the Browser Again to run the EXPLOITS!";},5000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+</head>
+<body>
+<a href="https://twitter.com/cronocardoso"><img class="icon" src="img/icon.gif"/></a> 
+<script src="p/cal.js"></script>
+<div style="background: url('img/fundo.jpg')50%; background-attachment:fixed; background-size:100%; background-repeat:no-repeat;">
+<div id="app" >
+<nav class="transparent" >
+<div class="nav-wrapper">
+<span id="date" ></span><span id="clock" ></span>
+<h1 href="javascript:void(0)"  class="brand-logo">CRONO_ DREAMBOX 7.02 V2.0</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<h1 class="msgs" id="msgs">SELECIONE A FORMA DO EXPLOIT! / SELECT THE FORM OF THE EXPLOIT!</h1>
+</div>
+</nav>
+<br><br><br><br>
+<div class="menu">
+<button class="tile" onclick="load_hen(); return false"><img src="img/HenEnable.png"><p class="white-text-lancador">HEN</p>
+</button>&nbsp;
+<button class="tile" onclick="load_mira(); return false"><img src="img/hen.png"><p class="white-text-lancador">MIRA</p>
+</button>&nbsp;
+<button class="tile" onclick="load_vr(); return false"><img src="img/HenVR.png"><p class="white-text-lancador">HEN VR</p>
+<button class="tile" onclick="load_binloader(); return false"><img src="img/binloader.png"><p class="white-text-lancador">BIN LOADER</p>
+</button>&nbsp;
+<button class="tile" onclick="load_ftp(); return false"><img src="img/ftp.png"><p class="white-text-lancador">FTP</p>
+</button>&nbsp;
+<button class="tile" onclick="load_app2usb(); return false"><img src="img/app2usb.png"><p class="white-text-lancador">APP TO USB</p>
+</button>&nbsp;
+<!--<button class="tile" onclick="load_app2usb(); return false"><img src="img/FanControl.png"><p class="white-text-lancador">CONTROL FAN</p>
+</button>&nbsp;-->
+<button class="tile" onclick="load_disableUpdate(); return false"><img src="img/disableupdate.png"><p class="white-text-lancador">DISABLE UPDATES</p>
+</button>&nbsp;
+<button class="tile" onclick="load_enableUpdate(); return false"><img src="img/enableupdate.png"><p class="white-text-lancador">ENABLE UPDATES</p>
+</button>&nbsp;
+<button class="tile" onclick="load_dumper(); return false"><img src="img/dumper.png"><p class="white-text-lancador">DUMPER</p>
+</button>&nbsp;
+<button class="tile" onclick="load_todex(); return false"><img src="img/todex.png"><p class="white-text-lancador">TO DEX</p>
+</button>&nbsp;
+<button class="tile" onclick="load_webrte(); return false"><img src="img/rte.png"><p class="white-text-lancador">WEB RTE</p>
+</button>&nbsp;
+<button class="tile" onclick="load_historyBloq(); return false"><img src="img/disableupdate.png"><p class="white-text-lancador">HISTORY BLOQUER</p>
+</button>&nbsp;
+<button class="tile" onclick="load_historyEnable(); return false"><img src="img/enableupdate.png"><p class="white-text-lancador">HISTORY ENABLE</p>
+</button>&nbsp;
+<button class="tile" onclick="load_backupDB(); return false"><img src="img/backup.png"><p class="white-text-lancador">BACKUP DB</p>
+</button>&nbsp;
+<button class="tile" onclick="load_restoreDB(); return false"><img src="img/restore.png"><p class="white-text-lancador">RESTORE DB</p>
+<button class="tile" onclick="load_fix(); return false"><img src="img/ps4debug.png"><p class="white-text-lancador">ERROR CE-30391-6</p>
+</button>&nbsp;
+</button>
+<button class="tile" onclick="load_kernelClock(); return false"><img src="img/kdumper.png"><p class="white-text-lancador">KERNEL CLOCK</p>
+</button>&nbsp;
+<button class="tile" onclick="load_linux(); return false"><img src="img/linux.png"><p class="white-text-lancador">LINUX</p>
+</button>&nbsp;
+
+
+
+</div>
+ </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+ <script src="js/materialize.js"></script>
+ <script src="js/vue.js"></script>
+ <script>
+for(var i=50; i<=80; i=i+5){
+    var select = document.getElementById("tempC");
+    var option = document.createElement("OPTION");
+  select.options.add(option);
+  option.text = i;
+  option.value = i;
+}
+tempC.value=70;
+</script>
+<script>
+function load_hen(){window.location.replace("payload.html#f=hen.js");}
+function load_mira(){window.location.replace("payload.html#f=mira.js");}
+function load_vr(){window.location.replace("payload.html#f=vr.js");}
+//function load_henSP5Cdex82(){window.location.replace("payload.html#f=henSP5Cdex82.js");}
+function load_binloader(){window.location.replace("payload.html");}
+function load_ftp(){window.location.replace("payload.html#f=ftp.js");}
+function load_app2usb(){window.location.replace("payload.html#f=app2usb.js");}
+//function load_fan(){window.location.replace("payload.html#f=fanThreshold"+tempC.value+".js");}
+function load_disableUpdate(){window.location.replace("payload.html#f=disableUpd.js");}
+function load_enableUpdate(){window.location.replace("payload.html#f=enableUpd.js");}
+function load_dumper(){window.location.replace("payload.html#f=dumper.js");}
+function load_todex(){window.location.replace("payload.html#f=todex.js");}
+function load_webrte(){window.location.replace("payload.html#f=webrte.js");}
+function load_historyBloq(){window.location.replace("payload.html#f=historyBlocker.js");}
+function load_historyEnable(){window.location.replace("payload.html#f=enableBrowser.js");}
+function load_backupDB(){window.location.replace("payload.html#f=dbBackup.js");}
+function load_restoreDB(){window.location.replace("payload.html#f=dbRespore.js");}
+function load_fix(){window.location.replace("payload.html#f=ce303916fix.js");}
+function load_kernelClock(){window.location.replace("payload.html#f=kernelClock.js");}
+function load_linux(){window.location.replace("payload.html#f=linux.js");}
+
+</script>
+
+
+</div>
+</body>
+</html>
