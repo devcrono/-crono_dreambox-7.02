@@ -1,5 +1,5 @@
 html, body {
-margin: -10px;
+margin: 0px;
 height: auto;
 width: auto;
 overflow: hidden;
@@ -33,9 +33,9 @@ text-align: center;
 
 .icon {
     position: absolute;
-    width: 200px;
-    height: 200px;
-    top: 68%;
+    width: 130px;
+    height: 130px;
+    top: 76%;
     right: 1%;
 }
 
